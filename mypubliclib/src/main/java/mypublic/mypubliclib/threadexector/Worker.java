@@ -16,7 +16,6 @@ public class Worker<T> implements Callable<T> {
 		synchronized (isStart) {
 			isStart = true;
 		}
-
 		if (proxyDoAction != null)
 			proxyDoAction.doAction();
 
